@@ -69,3 +69,8 @@ En **Configuración** hay funciones para:
 ## Importante
 
 Si la usuaria cambia de celular o borra los datos del navegador, debe usar previamente **Exportar JSON** para conservar una copia de seguridad.
+
+
+## Versión GitHub Pages v3 (estructura plana)
+
+Esta versión está preparada para subir **todos los archivos directamente a la raíz del repositorio**. No es necesario crear carpetas `images` ni `icons`. Los archivos PNG/SVG, `index.html`, `app.js`, `styles.css`, `manifest.webmanifest` y `service-worker.js` deben quedar todos al mismo nivel.
