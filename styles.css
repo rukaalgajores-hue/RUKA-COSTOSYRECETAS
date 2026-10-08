@@ -42,3 +42,41 @@ button{cursor:pointer}
 .visual-card.compact{margin:2px 0 12px;grid-template-columns:minmax(0,1.15fr) minmax(180px,.85fr)}
 .mini-illustration{display:grid;grid-template-columns:92px 1fr;gap:14px;align-items:center;background:#FFF8F1;border:1px solid var(--line);border-radius:20px;padding:12px;margin-bottom:12px}.mini-illustration img{width:92px;height:92px;border-radius:18px;object-fit:cover}.mini-illustration b{display:block;color:#536148;margin-bottom:4px}.mini-illustration p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
 @media (max-width:620px){.visual-card,.visual-card.compact{grid-template-columns:1fr}.visual-card img{aspect-ratio:16/9}.visual-copy{padding:4px 2px 2px}.brand-logo{width:min(205px,64vw);height:48px}}
+
+/* v5 · recetas con imagen */
+.recipe-card{overflow:hidden;padding:0}
+.recipe-card .recipe-card-body{padding:14px}
+.recipe-thumb{width:100%;height:190px;object-fit:cover;display:block;background:#f4ece4}
+.recipe-image-hero{width:100%;max-height:360px;object-fit:cover;border-radius:18px;display:block;background:#f4ece4;margin-bottom:10px}
+.image-upload-box{border:1.5px dashed #9aa88a;border-radius:18px;padding:12px;background:#fffaf6;text-align:center;outline:none}
+.image-upload-box:focus{box-shadow:0 0 0 3px rgba(110,123,85,.16)}
+.image-upload-box small{display:block;color:#7d746d;margin-top:8px;line-height:1.35}
+.image-preview{width:100%;height:220px;object-fit:cover;border-radius:14px;display:block;margin-bottom:10px}
+.image-placeholder{min-height:145px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#66745a}
+.image-placeholder:first-letter{font-size:30px}
+.image-placeholder span{font-size:13px;color:#81766f}
+@media (min-width:700px){.recipe-card{display:grid;grid-template-columns:180px 1fr}.recipe-thumb{height:100%;min-height:190px}.image-preview{height:280px}}
+
+/* v6 · identidad de marca Ruka actual */
+.brand-current{display:flex;align-items:center;gap:8px;min-width:0}
+.brand-logo-current{
+  display:block;
+  width:112px;
+  height:58px;
+  object-fit:contain;
+  object-position:center;
+  border-radius:12px;
+}
+.brand-current-sub{
+  color:#6E7B55;
+  font-family:"Arial Rounded MT Bold","Trebuchet MS","Segoe UI",Arial,sans-serif;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.12em;
+  line-height:1.1;
+  white-space:nowrap;
+}
+@media (max-width:520px){
+  .brand-logo-current{width:96px;height:52px}
+  .brand-current-sub{font-size:9px;letter-spacing:.09em}
+}

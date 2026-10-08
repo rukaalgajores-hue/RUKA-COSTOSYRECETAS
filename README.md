@@ -74,3 +74,19 @@ Si la usuaria cambia de celular o borra los datos del navegador, debe usar previ
 ## Versión GitHub Pages v3 (estructura plana)
 
 Esta versión está preparada para subir **todos los archivos directamente a la raíz del repositorio**. No es necesario crear carpetas `images` ni `icons`. Los archivos PNG/SVG, `index.html`, `app.js`, `styles.css`, `manifest.webmanifest` y `service-worker.js` deben quedar todos al mismo nivel.
+
+## Versión comercial v4
+
+Esta versión inicia sin datos de demostración: pedidos, recetas, clientes, producción, ventas, gastos y finanzas comienzan vacíos para cada nueva usuaria. También elimina automáticamente los antiguos registros de demostración identificados como tales, sin borrar datos reales cargados por la usuaria.
+
+
+## Versión comercial v5
+
+- Incluye 5 recetas de regalo Ruka: Brownie clásico, Budín de vainilla, Scons clásicos, Alfajor de maicena y Bizcochuelo clásico de naranja.
+- Los ingredientes base de estas recetas comienzan con precio $0 para que cada clienta cargue sus propios valores de compra.
+- Las recetas nuevas permiten elegir una imagen desde el dispositivo o pegar una imagen copiada dentro del área de imagen.
+- Las imágenes elegidas por la usuaria se redimensionan antes de guardarse y permanecen localmente en el navegador junto con sus datos.
+
+
+## Versión 6
+Se actualizó únicamente la identidad de marca del encabezado para usar el logo actual de Ruka y su estilo tipográfico, manteniendo sin cambios la estructura, colores y funcionamiento de la v5.
