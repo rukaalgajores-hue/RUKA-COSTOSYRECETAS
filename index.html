@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#6E7B55" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Ruka Costos & Recetas" />
+  <meta name="description" content="Recetas, costos, pedidos y finanzas para emprendimientos de pastelería." />
+  <title>Ruka Costos & Recetas</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="./icons/favicon.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app" class="app-shell" aria-live="polite">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <img src="./icons/icon-192.png" class="brand-icon" alt="Ícono de Ruka Costos & Recetas" />
+        <div>
+          <div class="brand-name">Ruka</div>
+          <div class="brand-sub">Costos & Recetas</div>
+        </div>
+      </div>
+      <button id="settingsBtn" class="icon-btn" aria-label="Abrir configuración" title="Configuración">⚙️</button>
+    </header>
+
+    <main id="mainContent" class="main-content" tabindex="-1"></main>
+
+    <nav class="bottom-nav" aria-label="Navegación principal">
+      <button data-nav="home" class="nav-item active"><span>🏠</span><b>Inicio</b></button>
+      <button data-nav="recipes" class="nav-item"><span>📖</span><b>Recetas</b></button>
+      <button data-nav="costs" class="nav-item"><span>🧮</span><b>Costos</b></button>
+      <button data-nav="orders" class="nav-item"><span>📦</span><b>Pedidos</b></button>
+      <button data-nav="more" class="nav-item"><span>☰</span><b>Más</b></button>
+    </nav>
+  </div>
+
+  <div id="sheetBackdrop" class="backdrop hidden"></div>
+  <aside id="moreSheet" class="bottom-sheet hidden" aria-label="Más secciones">
+    <div class="sheet-handle"></div>
+    <h2>Más herramientas</h2>
+    <div class="sheet-grid">
+      <button data-more="production">🧁<span>Producción</span></button>
+      <button data-more="customers">👩‍🍳<span>Clientes</span></button>
+      <button data-more="finances">💰<span>Finanzas</span></button>
+      <button data-more="ingredients">🥣<span>Ingredientes</span></button>
+      <button data-more="shopping">🛒<span>Compras</span></button>
+      <button data-more="history">🕘<span>Historial</span></button>
+    </div>
+  </aside>
+
+  <div id="modalBackdrop" class="backdrop hidden"></div>
+  <section id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <h2 id="modalTitle">Detalle</h2>
+      <button id="modalClose" class="icon-btn" aria-label="Cerrar">✕</button>
+    </div>
+    <div id="modalBody" class="modal-body"></div>
+  </section>
+
+  <div id="toast" class="toast hidden" role="status"></div>
+
+  <section id="onboarding" class="onboarding hidden" aria-label="Bienvenida">
+    <div class="onboarding-card">
+      <img src="./images/ruka-costos-recetas-hero.png" alt="Ilustración de recetario, calculadora y utensilios de pastelería" />
+      <h1>Bienvenida a Ruka Costos & Recetas</h1>
+      <p>Calculá tus costos, organizá tus recetas y vendé con rentabilidad.</p>
+      <form id="onboardingForm" class="form-stack">
+        <label>Tu nombre
+          <input id="onboardName" required autocomplete="name" placeholder="Ej.: Andrea" />
+        </label>
+        <label>Nombre del emprendimiento <span class="muted">(opcional)</span>
+          <input id="onboardBusiness" placeholder="Ej.: Ruka Sabores" />
+        </label>
+        <label>Moneda
+          <select id="onboardCurrency">
+            <option value="$">$ Pesos</option>
+            <option value="USD">USD</option>
+            <option value="€">€ Euro</option>
+          </select>
+        </label>
+        <button class="primary-btn" type="submit">Comenzar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+</html>
