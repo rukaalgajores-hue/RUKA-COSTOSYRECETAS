@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" role="img" aria-labelledby="title desc">
+  <title id="title">Ruka Costos &amp; Recetas</title>
+  <desc id="desc">Logo de Ruka con cupcake, hojas y el nombre de la aplicación.</desc>
+  <g fill="none" stroke="#7A624B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M33 45c1-12 10-21 21-21 6 0 11 2 15 6 3-8 10-13 19-13 11 0 20 8 22 19 9 1 16 8 16 17 0 10-8 18-18 18H51c-10 0-18-8-18-18 0-3 0-5 0-8z"/>
+    <path d="M46 71h66l-7 25H53z"/>
+    <path d="M65 77v13M82 77v13M99 77v13"/>
+  </g>
+  <path d="M74 13c-6-7-17-1-12 7 4 6 12 9 12 9s8-3 12-9c5-8-6-14-12-7z" fill="#E6A29A"/>
+  <g fill="none" stroke="#72825D" stroke-width="3" stroke-linecap="round">
+    <path d="M18 75c-8-4-12-12-13-19M17 71c-7 0-12-3-16-8M22 78c-1-7 1-12 5-17"/>
+    <path d="M123 70c8-4 12-12 13-19M124 66c7 0 12-3 16-8M119 74c1-7-1-12-5-17"/>
+  </g>
+  <text x="155" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="50" font-style="italic" font-weight="700" fill="#355E72">Ruka</text>
+  <text x="158" y="84" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="3.1" fill="#6E7B55">COSTOS &amp; RECETAS</text>
+</svg>
